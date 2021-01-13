@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <GuilhermeMedeiros_ButtonColorChanger>
+      <active>true</active>
+      <codePool>community</codePool>
+      <version>1.0.0</version>
+    </GuilhermeMedeiros_ButtonColorChanger>
+  </modules>
+</config>

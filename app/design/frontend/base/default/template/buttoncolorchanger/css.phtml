@@ -1,0 +1,15 @@
+<h4>IAEEEEEEEEE</h4>
+<?php $color = $this->ruleColor(); 
+$classes = explode(",", Mage::getStoreConfig('design/buttoncolorchanger/class_name'));
+$important = Mage::getStoreConfigFlag('design/buttoncolorchanger/important');
+Mage::log('apply css',null, 'debug_aquele.log', true);
+if($color) :
+?>
+<style>
+<?php foreach($classes as $class) : ?>
+    .<?php echo $class; ?> {
+        background-color: #<?php echo $color; ?> <?php echo $important? "!important" : ""; ?>;
+    }
+<?php endforeach; ?>
+</style>
+<?php endif; ?>

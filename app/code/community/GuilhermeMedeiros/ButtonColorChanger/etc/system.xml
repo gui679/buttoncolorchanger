@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <sections>
+        <design>
+            <groups>
+                <buttoncolorchanger translate="label" module="buttoncolorchanger">
+                    <label>Trocar Cor dos Botões</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <class_name translate="label">
+                            <label>Classe</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Nome da(s) classe(s) dos elementos HTML de botões que terão a cor alterada. Separar por vírgula.</comment>
+                        </class_name>
+                        <important translate="label">
+                            <label>Sobrescrever</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                            
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <comment>Define se o comando CSS deve sobrescrever quaisquer estilizações (usando !important).</comment>
+                        </important>
+                    </fields>
+                </buttoncolorchanger>
+            </groups>
+        </design>
+    </sections>
+</config>

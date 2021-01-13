@@ -1,0 +1,33 @@
+<config>
+    <menu>
+        <cms>
+            <children>
+                <buttoncolorchanger module="buttoncolorchanger">
+                    <title>Cor dos Botões</title>
+                    <sort_order>400</sort_order>
+                    <action>buttoncolorchanger/adminhtml_rules</action>
+                </buttoncolorchanger>
+            </children>
+        </cms>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <buttoncolorchanger translate="title" module="buttoncolorchanger">
+                        <title>Trocador Cor dos Botões</title>
+                        <sort_order>1000</sort_order>
+                        <children>
+                            <buttoncolorchanger translate="title">
+                                <title>Trocar Cor dos Botões</title>
+                            </buttoncolorchanger>
+                        </children>
+                    </buttoncolorchanger>                    
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

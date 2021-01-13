@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<buttoncolorchanger_adminhtml_rules_index>
+		<reference name="content">
+			<block type="buttoncolorchanger/adminhtml_rules" name="buttoncolorchanger_rules"/>
+		</reference>
+	</buttoncolorchanger_adminhtml_rules_index>
+	<buttoncolorchanger_adminhtml_rules_edit>
+		<reference name="head">
+			<action method="addJs">
+				<script>jscolor/jscolor.js</script>
+			</action>			
+		</reference>
+	</buttoncolorchanger_adminhtml_rules_edit>
+	<buttoncolorchanger_adminhtml_rules_new>
+		<reference name="head">
+			<action method="addJs">
+				<script>jscolor/jscolor.js</script>
+			</action>			
+		</reference>
+	</buttoncolorchanger_adminhtml_rules_new>
+</layout>
